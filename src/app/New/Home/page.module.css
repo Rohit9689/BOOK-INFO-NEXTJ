@@ -1,0 +1,30 @@
+.rating {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .star {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem; /* Adjust size as needed */
+  }
+  
+  .star input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .starIcon {
+    color: #ccc; /* Default star color */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .star input:checked ~ .starIcon,
+  .starIcon:hover,
+  .starIcon:hover ~ .starIcon {
+    color: #facc15; /* Selected star color */
+  }
+  

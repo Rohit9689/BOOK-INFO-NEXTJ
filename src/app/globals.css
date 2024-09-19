@@ -14,11 +14,28 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.default-theme {
+  --primary-bg-color: white;
+  --primary-text-color: rgb(213, 67, 67);
 }
+
+.synthwave {
+  --primary-bg-color: #4428d3;
+  --primary-text-color:#e5dae5;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+ .first-letter-style::first-letter {
+  font-size: 2rem;
+  color: #3490dc; 
+  font-weight: bold;
+}
+
+
 
 @layer utilities {
   .text-balance {
